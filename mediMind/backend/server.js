@@ -21,7 +21,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Initialize Firebase
-const serviceAccountPath = path.resolve("vhack2025-4bd40-firebase-adminsdk-fbsvc-fdf33c69a7.json");
+const serviceAccountPath = path.resolve(`${process.env.SERVICE_ACCOUNT}`);
 const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 
 admin.initializeApp({

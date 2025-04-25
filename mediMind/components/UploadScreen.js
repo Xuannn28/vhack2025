@@ -20,8 +20,12 @@ import * as FileSystem from 'expo-file-system';
 import axios from 'axios';
 import { Audio } from 'expo-av';
 
-const BASE_URL = 'http://172.20.10.2:3000';
-const PING_URL = `${BASE_URL}/ping`;
+import Constants from 'expo-constants';
+
+const BACKEND_URL = Constants.expoConfig.extra.BACKEND_URL;
+
+const BASE_URL = BACKEND_URL
+const PING_URL = `${BACKEND_URL}/ping`;
 const TRANSCRIBE_URL = `${BASE_URL}/transcribe`;
 const UPLOAD_CHUNK_URL = `${BASE_URL}/upload-chunk`;
 const TRANSCRIBE_SESSION_URL = `${BASE_URL}/transcribe-session`;
