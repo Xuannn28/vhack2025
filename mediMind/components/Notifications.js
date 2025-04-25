@@ -238,7 +238,7 @@ const NotificationsScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#A4C1C9',
+    backgroundColor: '#e6f0f3',
   },
   header: {
     flexDirection: 'row',
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: '#e1e8ed',
+    borderBottomColor: '#2c3e50',
   },
   backButton: {
     padding: 8,
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   },
   markAllText: {
     fontSize: 14,
-    color: '#006D77',
+    color: '#2c3e50',
     fontWeight: '500',
   },
   summaryContainer: {

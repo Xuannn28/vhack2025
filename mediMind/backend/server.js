@@ -128,22 +128,6 @@ app.get('/mock-device-data', async (req, res) => {
   }
 });
 
-app.post('/analyze', async (req, res) => {
-  const { text } = req.body;
-
-  if (!text) {
-    return res.status(400).json({ error: 'Missing text input' });
-  }
-
-  try {
-    const flaskRes = await axios.post('http://localhost:8000/analyze', { text });
-    res.json({ flaskResult: flaskRes.data });
-  } catch (error) {
-    console.error('Error calling Flask:', error.message);
-    res.status(500).json({ error: 'Failed to contact Flask service' });
-  }
-});
-
 app.post('/predict', async (req, res) => {
   const symptoms = req.body;
 

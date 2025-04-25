@@ -270,10 +270,10 @@ const Chatbot = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#e6f0f3',
   },
   header: {
-    backgroundColor: '#0066cc',
+    backgroundColor: '#2c3e50',
     padding: 20,
     flexDirection: 'row',
     alignItems: 'center',
@@ -369,7 +369,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 20,
     bottom: 90,
-    backgroundColor: '#007AFF',
+    backgroundColor: '#2c3e50',
     width: 60,
     height: 60,
     borderRadius: 30,
