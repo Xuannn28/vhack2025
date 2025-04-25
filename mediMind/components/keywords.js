@@ -1,0 +1,35 @@
+
+const healthKeywords = [
+    'health', 'medical', 'doctor', 'symptoms', 'treatment', 'medicine', 'diagnosis',
+    'surgery', 'vaccine', 'disease', 'illness', 'condition', 'therapy', 'recovery',
+    'pain', 'chronic', 'acute', 'remedy', 'prescription', 'hospital', 'patient',
+    'healthcare', 'wellness', 'physical', 'mental health', 'nutrition', 'exercise',
+    'fitness', 'allergy', 'vaccination', 'infection', 'fever', 'cough', 'headache',
+    'cold', 'flu', 'diabetes', 'cancer', 'heart disease', 'hypertension', 'asthma',
+    'arthritis', 'stress', 'anxiety', 'depression', 'sleep', 'insomnia', 'medication',
+    'treatment', 'doctor', 'clinic', 'checkup', 'preventive care', 'emergency', 'first aid',
+    'consultation', 'self-care', 'rehabilitation', 'prevention', 'weight loss', 'diet',
+    'healthy eating', 'immune system', 'nutrition', 'blood pressure', 'cholesterol',
+    'exercise routine', 'mental well-being', 'hello', 'hi', 'help', 'advice', 'support',
+    'well-being', 'hydration', 'calories', 'workout', 'yoga', 'meditation', 'mindfulness',
+    'cardio', 'strength training', 'flexibility', 'endurance', 'immune health', 'vitamins',
+    'minerals', 'supplements', 'herbal remedies', 'detox', 'weight management', 'BMI',
+    'body mass index', 'cholesterol levels', 'blood sugar', 'glucose', 'metabolism',
+    'hormones', 'stress management', 'burnout', 'therapy sessions', 'counseling',
+    'psychotherapy', 'emotional health', 'self-esteem', 'body image', 'eating disorders',
+    'substance abuse', 'addiction', 'recovery programs', 'support groups', 'health monitoring',
+    'wearables', 'fitness tracker', 'smartwatch', 'step count', 'calorie tracking',
+    'meal planning', 'healthy recipes', 'organic food', 'superfoods', 'antioxidants',
+    'probiotics', 'gut health', 'skin care', 'dermatology', 'aging', 'longevity',
+    'health insurance', 'medical records', 'telemedicine', 'virtual consultation',
+    'pandemic', 'public health', 'epidemic', 'quarantine', 'isolation', 'contact tracing',
+    'vaccination schedule', 'booster shot', 'side effects', 'health tips', 'lifestyle changes',
+    'work-life balance', 'occupational health', 'ergonomics', 'posture', 'stretching',
+    'sports injury', 'rehab', 'physical therapy', 'orthopedics', 'cardiology', 'neurology',
+    'oncology', 'pediatrics', 'geriatrics', 'prenatal care', 'postnatal care', 'child health',
+    'adolescent health', 'women’s health', 'men’s health', 'sexual health', 'reproductive health',
+    'fertility', 'pregnancy', 'menopause', 'hygiene', 'sanitation', 'water quality',
+    'air quality', 'pollution', 'climate change', 'environmental health', 'occupational therapy'
+];
+  
+  export default healthKeywords;
