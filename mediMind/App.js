@@ -26,6 +26,7 @@ import WearablePatientDetails from './components/WearablePatientDetails';
 import HealthDetailsScreen from './components/HealthDetails';
 import HealthRewardsScreen from './components/HealthRewards';
 import RecordScreen from './components/RecordScreen';
+import EmergencyMedicalApp from './components/Emergency';
 
 const Stack = createStackNavigator();
 
@@ -59,6 +60,7 @@ export default function App() {
 
         <Stack.Screen name="HealthDetails" component={HealthDetailsScreen} options={{ headerShown: false }} />
         <Stack.Screen name="HealthRewards" component={HealthRewardsScreen} options={{ headerBackTitle: 'Challenges' }} />
+        <Stack.Screen name="Emergency" component={EmergencyMedicalApp} options={{ headerBackTitle: 'Emergency' }} />
         
       </Stack.Navigator>
       </NavigationContainer>
