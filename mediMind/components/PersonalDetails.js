@@ -440,9 +440,7 @@ const PersonalDetails = ({navigation}) => {
                         alignItems: 'center'
                     }}
                     onPress={() => {
-                        if (!fullName || !age || !gender || !address || !country || !phoneNumber || !height || !weight) {
-                            setError(i18n.t('fill_in_fields_error'));
-                        } else if (!permission) {
+                        if (!permission) {
                             setError(i18n.t('permission_error'));
                         }
                         else {
