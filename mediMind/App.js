@@ -28,6 +28,7 @@ import HealthRewardsScreen from './components/HealthRewards';
 import RecordScreen from './components/RecordScreen';
 import EmergencyMedicalApp from './components/Emergency';
 import ProfileScreen from './components/ProfileScreen';
+import SymptomChecker from './components/SymptomChecker';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,7 @@ export default function App() {
         <Stack.Screen name="Personal Details" component={PersonalDetails} />
         <Stack.Screen name="Wearable Device" component={WearableDevice} />
         <Stack.Screen name="Wearable Patient Details" component={WearablePatientDetails}/>
+        <Stack.Screen name="Symptom Analyzer" component={SymptomChecker} />
 
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: 'Speech to Text' }}/>
         <Stack.Screen name="Upload" component={UploadScreen} />

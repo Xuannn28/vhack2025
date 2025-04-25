@@ -144,6 +144,28 @@ app.post('/analyze', async (req, res) => {
   }
 });
 
+app.post('/predict', async (req, res) => {
+  const symptoms = req.body;
+
+  if (!Array.isArray(symptoms) || symptoms.length === 0) {
+    return res.status(400).json({ error: 'No symptoms provided' });
+  }
+
+  try {
+    const flaskURL = process.env.FLASK_URL || 'http://localhost:5000';
+    console.log(`Calling Flask at ${flaskURL}/predict with:`, symptoms);
+
+    const flaskRes = await axios.post(`${flaskURL}/predict`, symptoms, {
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    res.json(flaskRes.data);
+  } catch (error) {
+    console.error('Error calling Flask /predict:', error.message);
+    res.status(500).json({ error: 'Failed to contact Flask service' });
+  }
+});
+
 // ======= SPEECH TRANSCRIPTION ENDPOINTS =======
 
 // Simple ping endpoint to verify connectivity

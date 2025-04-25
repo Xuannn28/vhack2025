@@ -22,18 +22,29 @@ const WearableDevice = ({ navigation }) => {
     try {
       setLoading(true);
       const response = await fetch(BACKEND_URL_MOCK);
-      const data = await response.json();
-
-      // Navigate to PatientDeviceDetails screen, passing data
-      navigation.navigate('Wearable Patient Details', { patient: data[0] });
-
+      const contentType = response.headers.get("content-type");
+  
+      if (contentType && contentType.includes("application/json")) {
+        const data = await response.json();
+        console.log("Wearable data:", data);
+  
+        if (Array.isArray(data) && data.length > 0) {
+          navigation.navigate('Wearable Patient Details', { patient: data[0] });
+        } else {
+          Alert.alert("No data", "No wearable data found.");
+        }
+      } else {
+        const text = await response.text();
+        console.warn("Expected JSON, got:", text);
+        Alert.alert("Error", "Unexpected response from server:\n" + text);
+      }
     } catch (err) {
       console.error('Connection failed:', err);
       Alert.alert('Error', 'Failed to connect to device data.');
     } finally {
       setLoading(false);
     }
-  };
+  };  
 
   return (
     <View style={{ flex: 1, backgroundColor: "#A4C1C9", padding: 20, justifyContent: 'center', alignItems: 'center' }}>
