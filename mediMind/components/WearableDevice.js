@@ -2,21 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Image, ActivityIndicator, Alert } from 'react-native';
 import { assets } from '../assets/assets';
 import i18n from '../translations/translations_language'; // Import the i18n instance
+import Constants from 'expo-constants';
 
 const WearableDevice = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
+  const BACKEND_URL = Constants.expoConfig.extra.BACKEND_URL;
+  const BACKEND_URL_MOCK = `${BACKEND_URL}/mock-device-data`;
 
   // Update language whenever the user changes the language
   useEffect(() => {
     // Example: update i18n locale based on user's selected language (replace this logic with your language preference)
     const selectedLanguage = 'english'; // Replace with your language preference logic
     i18n.locale = selectedLanguage;
+    console.log("Raw BACKEND_URL:", Constants.expoConfig.extra.BACKEND_URL);
+    console.log("Calling:", BACKEND_URL_MOCK);
   }, []);
 
   const handleConnect = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://192.168.68.115:5000/mock-device-data');
+      const response = await fetch(BACKEND_URL_MOCK);
       const data = await response.json();
 
       // Navigate to PatientDeviceDetails screen, passing data
