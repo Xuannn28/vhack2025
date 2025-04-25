@@ -27,6 +27,7 @@ import HealthDetailsScreen from './components/HealthDetails';
 import HealthRewardsScreen from './components/HealthRewards';
 import RecordScreen from './components/RecordScreen';
 import EmergencyMedicalApp from './components/Emergency';
+import ProfileScreen from './components/ProfileScreen';
 
 const Stack = createStackNavigator();
 
@@ -57,10 +58,10 @@ export default function App() {
         <Stack.Screen name="DoctorDetail" component={DoctorDetail} options={{ title: 'Doctor Details', headerBackTitle: 'Back', }} />
         <Stack.Screen name="DoctorAppointment" component={DoctorAppointment} options={{ title: 'New Appointment' }} />
         <Stack.Screen name="PatientDetails" component={PatientDetails} />
-
         <Stack.Screen name="HealthDetails" component={HealthDetailsScreen} options={{ headerShown: false }} />
         <Stack.Screen name="HealthRewards" component={HealthRewardsScreen} options={{ headerBackTitle: 'Challenges' }} />
         <Stack.Screen name="Emergency" component={EmergencyMedicalApp} options={{ headerBackTitle: 'Emergency' }} />
+        <Stack.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
         
       </Stack.Navigator>
       </NavigationContainer>

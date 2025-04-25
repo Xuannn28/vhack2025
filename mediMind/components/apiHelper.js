@@ -3,7 +3,7 @@ import axios from 'axios';
 // Function to summarize text using Hugging Face API
 export const summarizeText = async (text) => {
   try {
-    const HUGGINGFACE_API_KEY = "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"; 
+    const HUGGINGFACE_API_KEY = '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';   // TODO: move to .env file
     
     const response = await axios.post(
       'https://api-inference.huggingface.co/models/facebook/bart-large-cnn',

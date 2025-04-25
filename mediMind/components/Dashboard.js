@@ -116,10 +116,12 @@ const Dashboard = ({navigation}) => {
                             onPress={() => navigation.navigate('HealthDetails')}>
                             <FontAwesome5 name="list" size={24} color="#7c8c9a" />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.navButton}>
-                            <FontAwesome5 name="envelope" size={24} color="#7c8c9a" />
+                        <TouchableOpacity style={styles.navButton}
+                          onPress={() => navigation.navigate('Emergency')}>
+                            <FontAwesome5 name="alarm" size={24} color="#7c8c9a" />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.navButton}>
+                        <TouchableOpacity style={styles.navButton}
+                            onPress={() => navigation.navigate('Profile')}>
                             <FontAwesome5 name="user" size={24} color="#7c8c9a" />
                         </TouchableOpacity>
                     </View>
