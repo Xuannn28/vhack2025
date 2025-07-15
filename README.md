@@ -3,6 +3,9 @@
 
 ## MediMind by Team Abracadabra
 
+** Pitch Presentation Link **
+https://www.canva.com/design/DAGi0Kdifjg/5CX0W0PX7DGsAF5lhOoyaw/edit?utm_content=DAGi0Kdifjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
 **Introduction**
 
 MediMind is an AI-powered healthcare assistant designed to enhance disease management and mental health support. Our app offers functionalities such as smart reminders, appointment booking, transcription services, and an AI chatbot, empowering users to stay focused on their health and effortlessly track their daily wellness. Additionally, MediMind provides emergency contact support for mental health crises, ensuring users receive the help they need when it matters most. By leveraging AI and data science, MediMind delivers personalized healthcare management, making proactive and accessible health solutions a reality.
