@@ -3,7 +3,7 @@
 
 ## MediMind by Team Abracadabra
 
-** Pitch Presentation Link **
+**Pitch Presentation Link**
 https://www.canva.com/design/DAGi0Kdifjg/5CX0W0PX7DGsAF5lhOoyaw/edit?utm_content=DAGi0Kdifjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
 **Introduction**
